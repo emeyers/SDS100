@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 Class material and functions for S&DS 100: Introductory Statistics
 
 
-## Installing the SDS230 package
+## Installing the SDS100 package
 
 To install the SDS100 package that contains functions that are useful for the
 class run the function below 
