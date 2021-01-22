@@ -14,9 +14,17 @@ list_class_files <- function(file_dir_name) {
                 " This argument must be set to one of the following: '",
                 paste(possible_file_dir_names,collapse="', '"), "'."))
 
+  
+  # older repositories use the term "master" for the default repository branch
+  #file_url <- paste0("https://api.github.com/repos/", get_github_user_name(), "/",
+  #                   get_package_name(), "/git/trees/master?recursive=1")
+  
+  
+  # newer repositories use the term "main" for the default repository branch
   file_url <- paste0("https://api.github.com/repos/", get_github_user_name(), "/",
-                     get_package_name(), "/git/trees/master?recursive=1")
-
+                     get_package_name(), "/git/trees/main?recursive=1")
+  
+  
   req <- httr::GET(file_url)
   stop_for_status(req)
 
