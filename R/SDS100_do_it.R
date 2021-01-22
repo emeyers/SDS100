@@ -1,15 +1,25 @@
 
-# A function do_it() that runs code many times.
-# It is a simplified version of the mosiac do() that returns a vector only.
-# The idea and code are based on the mosaic do() function, which can be found on
-# github page at: https://github.com/ProjectMOSAIC/mosaic/blob/master/R/do.R
-# The code uses S4 objects.
-
-
-
-# the constructor
+#' Repeats a process many times and returns a vector of results
+#'
+#'
+#'@note 
+#' This is a simplified version of the mosiac do() that returns a vector only.
+#' The idea and code are based on the mosaic do() function, which can be found
+#' on github page at: https://github.com/ProjectMOSAIC/mosaic/blob/master/R/do.R
+#' The code uses S4 objects.
+#'
+#'   
+#' @param n The number of times to repeat the process.
+#' 
+#' @param null_dist A vector of data consistent with a null hypothesis.
+#'   
+#' @param lower.tail A Boolean indicating whether one should return the
+#'   proportion of points less than or equal to the obs_stat value.
+#'
+#' @examples
+#'  many_hellos <- do_it(10) * { "hello" }
+#'
 #' @export
-
 do_it <- function(n=1L) {
   new('doer', n=n)
 }
@@ -24,7 +34,6 @@ do_it <- function(n=1L) {
 setClass('doer',
          representation = representation(n='numeric'),
          prototype = prototype(n=1))
-
 
 
 
