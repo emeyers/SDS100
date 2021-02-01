@@ -9,6 +9,17 @@
 
 Class material and functions for S\&DS 100: Introductory Statistics
 
+## Class material
+
+All class material is in the
+[ClassMaterial](https://github.com/emeyers/SDS100/tree/master/ClassMaterial)
+directory. In particular the
+[ClassMaterial/slides](https://github.com/emeyers/SDS100/tree/master/ClassMaterial/slides)
+directory contains the class slides which can be useful to review what
+was covered in class.
+
+
+
 ## Installing the SDS100 package
 
 To install the SDS100 package that contains functions that are useful
@@ -55,16 +66,6 @@ tinytex:::is_tinytex()
 
 If the function returns TRUE, then you have successfully installed
 LaTeX.
-
-## Class material
-
-All class material is in the
-[ClassMaterial](https://github.com/emeyers/SDS100/tree/master/ClassMaterial)
-directory. In particular the
-[ClassMaterial/slides](https://github.com/emeyers/SDS100/tree/master/ClassMaterial/slides)
-directory contains the class slides which can be useful to review what
-was covered in class.
-
 
 
 ## Installing the SDS100 package on MyApps
