@@ -76,5 +76,19 @@ To install the SDS100 package on MyApps, please following the steps below:
 
 1. Install R Tools by by clicking on this link: https://cran.r-project.org/bin/windows/Rtools/rtools40-x86_64.exe and then clicking on the file that is download to install R Tools. 
 
-2. Follow the instructions above to install devtools, the SDS100 package, and LaTeX in R Studio. 
+2. Open up R Studio the MyApps virtual windows desktop and run the following commands in the R console: 
+
+``` r
+install.packages("devtools")
+devtools::install_github("emeyers/SDS100")
+```
+
+Once you have done this you should be all good to go. You can test your installation worked by running the following command:
+
+``` r
+tinytex:::is_tinytex()
+#> [1] TRUE
+```
+
+If the function returns TRUE, then you have successfully installed LaTeX and you should hopefuly be all set. 
 
