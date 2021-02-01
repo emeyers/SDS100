@@ -64,3 +64,16 @@ directory. In particular the
 [ClassMaterial/slides](https://github.com/emeyers/SDS100/tree/master/ClassMaterial/slides)
 directory contains the class slides which can be useful to review what
 was covered in class.
+
+
+
+## Installing the SDS100 package on MyApps
+
+If you can't get R/R Studio or the SDS100 package installed on your own computer, you can use the MyApps virtual windows desktop which can be accessed through a web browser at: http://aka.ms/wvdarmweb . The MyApps virual windows desktop already has R and R Studio installed, but you will need to install the SDS100 package on the MyApps. 
+
+To install the SDS100 package on MyApps, please following the steps below: 
+
+
+
+
+
