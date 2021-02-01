@@ -74,7 +74,7 @@ If you can't get R/R Studio or the SDS100 package installed on your own computer
 
 To install the SDS100 package on MyApps, please following the steps below: 
 
+1. Install R Tools by by clicking on this link: https://cran.r-project.org/bin/windows/Rtools/rtools40-x86_64.exe and then clicking on the file that is download to install R Tools. 
 
-
-
+2. Follow the instructions above to install devtools, the SDS100 package, and LaTeX in R Studio. 
 
