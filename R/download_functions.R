@@ -101,13 +101,18 @@ download_class_code <- function(class_number, with_answers = FALSE) {
 #' repository.
 #'
 #' @param file_name The name the file that has the data.
+#' 
+#' @param mode A character indicating the mode with which to write the file.
+#'   Useful values are "w", "wb" (binary), "a" (append) and "ab". Not used for
+#'   methods "wget" and "curl". See also ‘Details’, notably about using "wb" for
+#'   Windows. See download.file() mode argument.
 #'
 #' @examples
 #'  # Download code from the first class
 #'  \dontrun{download_data("test_data.rda")}
 #'
 #' @export
-download_data <- function(file_name) {
+download_data <- function(file_name, mode = "w") {
 
   base_path <- paste0(get_base_url(), "data/")
   full_path <- paste0(base_path, file_name)
@@ -120,7 +125,7 @@ download_data <- function(file_name) {
   check_github_file_exists("data", file_name)
 
   # if the file does not already exist, download it
-  utils::download.file(full_path, file_name)
+  utils::download.file(full_path, file_name, mode = mode)
 
 }
 
