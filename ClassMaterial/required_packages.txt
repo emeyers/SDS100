@@ -1,2 +1,4 @@
 tinytex,
+carData,
+Lahman,
 xkcd
