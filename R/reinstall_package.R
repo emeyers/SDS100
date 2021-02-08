@@ -23,9 +23,8 @@ reinstall_package <- function() {
 
   # unload the old version of the package
   # putting this in a tryCatch to suppress a seemingly meaningless error message seen on Mac/Windows
-  result <- tryCatch({ 
-    detach(paste0("package:", package_name), unload = TRUE, character.only = TRUE)
-    }, error = function(err) {})
+  result <- try(detach(paste0("package:", package_name), unload = TRUE, character.only = TRUE), silent = TRUE)
+ 
 
   
   # load the new version of the package
