@@ -57,7 +57,10 @@ play button. This code will download data and images needed for these exercises.
 ```{r get_hw_files, eval = FALSE, echo = FALSE, message = FALSE}
 
 
-SDS100::download_image("beta_carotene.png")
+#SDS100::download_image("beta_carotene.png")
+
+download.file("https://raw.githubusercontent.com/emeyers/SDS100/master/ClassMaterial/images/beta_carotene.png", "beta_carotene.png", mode = "wb")
+
 
 download.file("https://yale.box.com/shared/static/ey6ahs284lhoye1hgqloe44aqbb2h0qd.rda", 
               "cars_small.Rda")
