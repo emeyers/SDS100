@@ -112,7 +112,7 @@ download_class_code <- function(class_number, with_answers = FALSE) {
 #'  \dontrun{download_data("test_data.rda")}
 #'
 #' @export
-download_data <- function(file_name, mode = "w") {
+download_data <- function(file_name, mode = "wb") {
 
   base_path <- paste0(get_base_url(), "data/")
   full_path <- paste0(base_path, file_name)
@@ -149,7 +149,7 @@ download_data <- function(file_name, mode = "w") {
 #'  \dontrun{download_image("valentin.png")}
 #'
 #' @export
-download_image <- function(file_name, force_download = FALSE){
+download_image <- function(file_name, force_download = FALSE, mode = "wb"){
 
   base_path <- paste0(get_base_url(), "images/")
   full_path <- paste0(base_path, file_name)
@@ -159,7 +159,7 @@ download_image <- function(file_name, force_download = FALSE){
 
   # only download the image if it doesn't exist or if force_download is TRUE
   if (!file.exists(file_name) || force_download == TRUE) {
-    utils::download.file(full_path, file_name)
+    utils::download.file(full_path, file_name, mode = mode)
   }
 
 }
