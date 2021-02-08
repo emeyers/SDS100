@@ -22,8 +22,12 @@ reinstall_package <- function() {
   devtools::install_github(user_package_name, force = TRUE)
 
   # unload the old version of the package
-  tryCatch({ detach(paste0("package:", package_name), unload = TRUE, character.only = TRUE) })
+  # putting this in a tryCatch to suppress a seemingly meaningless error message seen on Mac/Windows
+  result <- tryCatch({ 
+    detach(paste0("package:", package_name), unload = TRUE, character.only = TRUE)
+    }, error = function(err) {})
 
+  
   # load the new version of the package
   eval(parse(text=paste0("library(", package_name, ")")))
 
