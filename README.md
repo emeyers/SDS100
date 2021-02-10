@@ -68,7 +68,7 @@ If the function returns TRUE, then you have successfully installed
 LaTeX.
 
 
-## Installing the SDS100 package on MyApps
+## Installing the SDS100 package on MyApps and on Windows
 
 If you can't get R/R Studio or the SDS100 package installed on your own computer, you can use the MyApps virtual windows desktop which can be accessed through a web browser at: http://aka.ms/wvdarmweb . The MyApps virual windows desktop already has R and R Studio installed, but you will need to install the SDS100 package on the MyApps. 
 
