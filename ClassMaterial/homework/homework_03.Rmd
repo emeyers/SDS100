@@ -33,7 +33,7 @@ As always, if you need help with any of the homework assignments, please attend 
     
 
   library(knitr)
-  # makes sure the code is wrapped to fit when it creats a pdf
+  # makes sure the code is wrapped to fit when it creates a pdf
   opts_chunk$set(tidy.opts=list(width.cutoff=60))   
   
   
