@@ -37,9 +37,14 @@ As always, if you need help with any of the homework assignments, please attend 
   opts_chunk$set(tidy.opts=list(width.cutoff=60))   
   
   
-  SDS100::download_image("Lock5_3_6.png")
-  SDS100::download_image("hw3_instate_tuition.png")
-    
+  #SDS100::download_image("Lock5_3_6.png")
+  #SDS100::download_image("hw3_instate_tuition.png")
+  
+  download.file("https://raw.githubusercontent.com/emeyers/SDS100/master/ClassMaterial/images/Lock5_3_6.png", "Lock5_3_6.png", mode = "wb")
+
+download.file("https://raw.githubusercontent.com/emeyers/SDS100/master/ClassMaterial/images/hw3_instate_tuition.png", "hw3_instate_tuition.png", mode = "wb") 
+  
+   
 ```
 
 
