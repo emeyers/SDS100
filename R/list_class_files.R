@@ -1,10 +1,15 @@
 
-#' @import httr
 
-
-# A helper function that does all the hard work of going ot the repository
-#  and listing the files in the specified directory
-
+#' Lists the files that are on the class GitHub site in a particular directory
+#'
+#' @param file_dir_name The name of a directory in the GitHub repository.
+#'   Options are: "homework", "class_code", "data", "images".
+#'
+#' @examples
+#'  # List files in the data directory on GitHub 
+#'  \dontrun{list_class_files("data")}
+#'
+#' @export
 list_class_files <- function(file_dir_name) {
 
   possible_file_dir_names <- c("homework", "class_code", "data", "images")

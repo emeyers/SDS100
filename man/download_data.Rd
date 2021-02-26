@@ -4,7 +4,7 @@
 \alias{download_data}
 \title{Download data related to the class}
 \usage{
-download_data(file_name, mode = "w")
+download_data(file_name, mode = "wb")
 }
 \arguments{
 \item{file_name}{The name the file that has the data.}

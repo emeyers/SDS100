@@ -1,5 +1,9 @@
 
 
+#' @import httr
+
+
+
 # should set this to the name of the package
 package_name <- "SDS100"
 

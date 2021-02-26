@@ -1,5 +1,19 @@
 
 
+test_that("can download any file", {
+  
+  download_image_name <- "valentin.png"
+  download_any_file(paste0("images/", download_image_name))
+  
+  expect_true(file.exists(download_image_name))
+  
+  file.remove(download_image_name)   # clean up
+  
+})
+
+
+
+
 test_that("can download an image", {
 
   download_image_name <- "valentin.png"

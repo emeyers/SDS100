@@ -143,6 +143,11 @@ download_data <- function(file_name, mode = "wb") {
 #'
 #' @param force_download Will download and overwrite an existing image if the
 #' downloaded image has the same name.
+#' 
+#' @param mode A character indicating the mode with which to write the file.
+#'   Useful values are "w", "wb" (binary), "a" (append) and "ab". Not used for
+#'   methods "wget" and "curl". See also ‘Details’, notably about using "wb" for
+#'   Windows. See download.file() mode argument.
 #'
 #' @examples
 #'  # Download an image from the class GitHub repository
@@ -163,6 +168,50 @@ download_image <- function(file_name, force_download = FALSE, mode = "wb"){
   }
 
 }
+
+
+
+
+
+#' Download any file related to the class
+#'
+#' This function downloads any file related to the class from the class GitHub
+#' repository.
+#'
+#' @param file_path_and_name The name of the path and file to download.
+#'
+#' @param force_download Will download and overwrite an existing file if the
+#' downloaded file has the same name.
+#' 
+#' @param mode A character indicating the mode with which to write the file.
+#'   Useful values are "w", "wb" (binary), "a" (append) and "ab". Not used for
+#'   methods "wget" and "curl". See also ‘Details’, notably about using "wb" for
+#'   Windows. See download.file() mode argument.
+#'
+#' @examples
+#'  # Download an image from the class GitHub repository
+#'  \dontrun{download_any_file("images/valentin.png")}
+#'
+#' @export
+download_any_file <- function(file_path_and_name, force_download = FALSE, mode = "wb"){
+
+  full_path <- paste0(get_base_url(), file_path_and_name)
+  file_name <- basename(file_path_and_name)
+  file_dir_name <- dirname(file_path_and_name)
+  
+  # check the file exists on GitHub and if not throw and error
+  check_github_file_exists(file_dir_name, file_name)
+  
+  # only download the file if it doesn't exist or if force_download is TRUE
+  if (!file.exists(file_name) || force_download == TRUE) {
+    utils::download.file(full_path, file_name, mode = mode)
+  }
+  
+}
+
+
+
+
 
 
 
