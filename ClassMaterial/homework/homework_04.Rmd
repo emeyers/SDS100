@@ -470,7 +470,7 @@ $\\$
     
 **Exercise 4.2 (14 points)**: Now use the `do_it()` function to create a bootstrap distribution by doing the following steps:
 
-1. Sample with replacement `n_sample_size` car prices from the `honda_price_sample` vector. 
+1. Sample with replacement `n_sample_size` car prices from the `price_sample` vector. 
 2. Calculate the mean of the bootstrap sample. 
 3. Repeat this process 10,000 times and store the results in a vector called `bootstrap_dist`.
 
