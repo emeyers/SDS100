@@ -1,4 +1,4 @@
-fusion time	group
+fusion_time	group
 47.20001	NV
 21.99998	NV
 20.39999	NV
