@@ -468,7 +468,7 @@ g. Would it be appropriate to use this regression line to predict the winners nu
 
 
 # load the data on the hot dog contest winners in a data frame called HotDogs
-HotDogs <- HotDogs2015
+HotDogs <- HotDogs2019
 
 
 
