@@ -11,7 +11,7 @@ $\\$
 
 
 
-In the following homework you will gain practice running hypothesis tests for more than two means and correlations. Please submit a compiled pdf with your answers to the exercises to Gradescope *by 11pm on Tuesday April 3rd*. **Five points will be taken off if you do not mark the pages for each problem on Gradescope.**
+In the following homework you will gain practice running hypothesis tests for more than two means and correlations. Please submit a compiled pdf with your answers to the exercises to Gradescope *by 11pm on Sunday April 3rd*. **Five points will be taken off if you do not mark the pages for each problem on Gradescope.**
 
 A list of functions we have used in class can be found on [Canvas](https://yale.instructure.com/courses/76043/pages/r-functions-used-in-the-class).You might also find the following symbols useful:  $\mu$, $H_0$, $H_a$, $\rho$,  $\ne$, and $\alpha$. For full credit on problems involving R, be sure to label all your figures and to "show your work" by making sure all values that are answers to questions are printed/visible in your R Markdown pdf.
 
