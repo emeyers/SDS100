@@ -1,5 +1,30 @@
 
 
+#' Calculates proportion of values in a particular category
+#'
+#'   
+#' @param v A vector of categorical data.
+#' 
+#' @param category_name A string specifying the name of a category. The
+#'   proportion of values in that category will be returned.
+#'
+#' @examples
+#'  set.seed(100)
+#'  sprinkle_sample <- get_sprinkle_sample(100)
+#'  get_proportion(sprinkle_sample, "red")
+#'
+#' @export
+get_proportion <- function(v, category_name) {
+  
+  prop.table(table(v))[category_name]
+  
+}
+
+
+
+
+
+
 #' Calculates the MAD statistic
 #'
 #' The MAD statistic is the Mean Absolute Difference between the means of

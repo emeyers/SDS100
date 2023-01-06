@@ -171,3 +171,41 @@ rflip_count <- function(num_flips = 1, prob = .5, report_proportion = FALSE) {
 
 
 
+
+
+
+#' Generates a vector of random die rolls
+#'
+#'  This function simulates rolling a k-sided die n times and returns the number
+#'  of times each of the k outcomes occured, where the probability of the k
+#'  outcomes is given by the vector prob. This function is just a wrapper for
+#'  the `rmultinom()` function.
+#'   
+#' @param num_rolls The number of times to roll the die.
+#' 
+#' @param prob The probability of getting each side of the die on each roll
+#' 
+#' @param outcome_names A vector of names for the outcomes. Default values is
+#'  of NULL returns sequential integers as the names of the vector.  
+#'   
+#' @examples
+#'  set.seed(100)
+#'  # roll a 6-sided fair die (the default) 100 times
+#'  rroll(100, outcome_names = c("one", "two", "three", "four", "five", "six"))
+#'
+#' @export
+rroll <- function(num_rolls, prob = rep(1/6, 6), outcome_names = NULL) {
+  
+  the_rolls <- as.vector(rmultinom(1, size = num_rolls, prob = prob))
+  
+  if (is.null(outcome_names)) {
+    names(the_rolls) <- 1:length(prob)
+  } else {
+    names(the_rolls) <- outcome_names
+  }
+  
+  the_rolls
+  
+}
+
+
