@@ -2,3 +2,5 @@ tinytex,
 carData,
 Lahman,
 xkcd
+fivethirtyeight
+Lock5Data
