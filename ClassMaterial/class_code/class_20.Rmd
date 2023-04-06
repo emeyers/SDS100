@@ -1,5 +1,5 @@
 ---
-title: "Class 19 code"
+title: "Class 20 code"
 output: pdf_document
 ---
 
@@ -19,11 +19,7 @@ library(SDS100)
 
 
 
-
-
-
 $\\$
-
 
 
 
@@ -35,8 +31,7 @@ $\\$
 Does the AstraZeneca vaccine cause blood clots? 
 
 
-A study found that 79 people experienced clots after receiving a first vaccine dose. 
-More than 20 million AstraZeneca vaccines doses had been administered across the UK by the end of March.
+A study found that 79 people experienced clots after receiving a first vaccine dose.More than 20 million AstraZeneca vaccines doses had been administered across the UK by the end of March.
 
 
 About four people in a million would normally be expected to develop this
@@ -45,52 +40,45 @@ usual rate hard to estimate.
 
 
 ### Step 1: 
-$H_0: \pi$ = 1/1,000,000
-$H_A: \pi$ > 1/1,000,000
+
+
+
 
 
 ```{r}
 
 
-p_hat <-  79/(20 * 10^6) 
-
-n <- 20 * 10^6
-
-pi_0 <- 1/10^6
-
-p_hat <- 79/(20 * 10^6)
-
-SE <- sqrt(   (pi_0  * (1 - pi_0))/n    )
-
-(z_stat <- (p_hat - pi_0)/SE)
+# Step 2: calculate the observed z-statistic
 
 
 
 
 
-# Are these conditions met? 
-n * pi_0		 
-n * (1 - pi_0) 
+
+
+# Step 2b: Are these conditions met? 
 
 
 
-# visualize the null distribution
 
-x_vals <- seq(-15, 15, length.out = 1000)
-
-y_vals <- dnorm(x_vals, 0, 1)
-
-plot(x_vals, y_vals, type = "l", xlim = c(-15, 15))
+# Step 3: visualize the null distribution
 
 
-abline(v = z_stat, col = "red")
 
 
-# get the p-value
-pnorm(z_stat, 0, 1, lower.tail = FALSE)
 
 
-# conclusion!
+
+
+
+# Step 4: get the p-value
+
+
+
+
+# Step 5: conclusion!
+
+
 
 
 ```
@@ -111,10 +99,8 @@ What is the probability of having a blood clot if you take the AstraZeneca vacci
 ```{r}
 
 
-z_star <- qnorm(.975)
 
-p_hat - z_star * SE
-p_hat + z_star * SE
+
 
 
 ```
@@ -148,23 +134,22 @@ data_vec <- c(has_clot, no_clot)
 
 
 
-boot_data <- sample(data_vec, replace = TRUE)
-
-boot_proportion <- mean(boot_data)
 
 
-library(tictoc)
-
+# Time how long it takes to create 10 bootstrap statistics... 
 tic()
 
-boot_dist <- do_it(10) * {
-  
-  boot_data <- sample(data_vec, replace = TRUE)
-  boot_proportion <- mean(boot_data)
-  
-}
+
+
+
+
+
+
 
 toc()
+
+
+
 
 
 
@@ -198,12 +183,10 @@ week by US household cats that hunt outdoors.
 ```{r}
 
 
-xbar <- 2.4
-n <- 55
-s = 1.51
-t_star <- qt(.995, 54)
 
-2.4 + c(-1, 1) * t_star * s/sqrt(n)
+
+
+
 
 
 ```
@@ -239,20 +222,20 @@ average?
 ```{r}
 
 
-mu0 <- 8
-xbar <- 6.2
-n <- 12
-s = 1.17
-t_star <- qt(.975, 54)
 
-(t_stat <- (xbar - mu0)/(s/sqrt(n)))
 
-pt(t_stat, n-1)
+
+
+
 
 
 ```
 
 
 
-  
+
+
+
+
+
 
