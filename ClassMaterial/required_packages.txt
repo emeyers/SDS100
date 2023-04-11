@@ -1,4 +1,6 @@
 tinytex,
+formatR,
+mosaic,
 carData,
 Lahman,
 xkcd
