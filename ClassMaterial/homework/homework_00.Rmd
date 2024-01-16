@@ -17,7 +17,7 @@ I recommend getting started on this homework early so that you can solve any tec
 
 For all the homework, it will be important to print out all your answers for your calculations in the R chunks by putting objects that contain results on a line by themselves which causes them to be printed in the R Markdown output. However, only print out meaningful results, and do not print out pages of data. It would be good to practice to do this on this homework so that you get into the habit!
 
-If you need help with any of the homework assignments, please attend the TA office hours which are listed on Canvas and/or ask questions on [Ed Discussions forum](https://edstem.org/us/courses/31136/discussion/). Also, if you have completed the homework, please help others out by answering questions on Ed Discussions. Finally, if you have conceptual questions, reviewing the class slides and videos will be helpful. 
+If you need help with any of the homework assignments, please attend the TA office hours which are listed on Canvas and/or ask questions on Ed Discussions forum. Also, if you have completed the homework, please help others out by answering questions on Ed Discussions. Finally, if you have conceptual questions, reviewing the class slides and videos will be helpful. 
 
 
 
