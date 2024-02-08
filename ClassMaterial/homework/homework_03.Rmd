@@ -548,7 +548,7 @@ $\\$
 
 
 
-**Exercise 3.5** (10 points):  Finally, draw one additional single sample of size n = 100 and calculate the 95% confidence interval based on this sample and the standard error calculated in exercise 3.2. Then repeat this process for n = 25, and n = 400 using the standard errors calculated in exercise 3.4. In the answer section report all these 95% confidence intervals and whether they change as you expected. Also, what do you think the value of the parameter is, and do you think any of these confidence intervals do not contain this parameter? 
+**Exercise 3.5** (10 points):  Finally, draw one additional single sample of size n = 100 and calculate the 95% confidence interval based on this sample and the standard error calculated in exercise 3.3. Then repeat this process for n = 25, and n = 400 using the standard errors calculated in exercise 3.4. In the answer section report all these 95% confidence intervals and whether they change as you expected. Also, what do you think the value of the parameter is, and do you think any of these confidence intervals do not contain this parameter? 
 
 ```{r q3_5}
 
