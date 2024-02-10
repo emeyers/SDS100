@@ -628,7 +628,7 @@ $\\$
 ```{r 3_7}
 
 # The predicted number of hot dogs to be eaten in 2050.
-# Note this prediction is not appropriate to use!
+
 
 
 
