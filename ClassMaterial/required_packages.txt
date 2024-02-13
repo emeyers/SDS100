@@ -3,6 +3,7 @@ formatR,
 mosaic,
 carData,
 Lahman,
-xkcd
-fivethirtyeight
+lazyeval,
+xkcd,
+fivethirtyeight,
 Lock5Data
