@@ -172,7 +172,7 @@ $\\$
 
 We can run a parametric test for correlation using the following t-statistic:
 
-$ t ~=~ \frac{r\sqrt{n - 2}}{\sqrt{1 - r^2}}$
+$t ~=~ \frac{r\sqrt{n - 2}}{\sqrt{1 - r^2}}$
 
 
 Let's examine again if there is a correlation between budget and revenue on the Bechdel data.
